@@ -4,7 +4,7 @@ This repository contains the [Terraform](https://www.terraform.io/) code to
 generate a Virtual Private Cloud (VPC) and Elastic Kubernetes Cluster in Amazon 
 Web Services. State is stored in an S3 bucket with a locking DynamoDB table.
 
-![This is an image](/assets/xyz-eks-diagram.jpg)
+![Diagram](/assets/xyz-eks-diagram.jpg)
 
 ## Infrastructure
 

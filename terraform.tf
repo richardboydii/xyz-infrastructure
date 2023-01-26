@@ -31,9 +31,9 @@ terraform {
   required_version = "~> 1.3"
  
    backend "s3" {
-    bucket = "xyz-tf-state"
+    bucket = "xyz-demo-tf-state"
     key    = "xyz-vpc-eks-state"
-    region = "us-east-1"
+    region = "us-east-2"
     dynamodb_table = "xyz-tf-state-db"
   } 
 }

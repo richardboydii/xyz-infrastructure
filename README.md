@@ -2,7 +2,8 @@
 
 This repository contains the [Terraform](https://www.terraform.io/) code to 
 generate a Virtual Private Cloud (VPC) and Elastic Kubernetes Cluster in Amazon 
-Web Services. State is stored in an S3 bucket with a locking DynamoDB table.
+Web Services. The default region is us-east-2. State is stored in an S3 bucket 
+with a locking DynamoDB table.
 
 ![Diagram](/assets/xyz-eks-diagram.jpg)
 
@@ -28,7 +29,7 @@ for this workload is $133.34 per month.
 2. In AWS, create a DynamoDB table. Use `LockID ` for the partition key.
 2. In AWS, create an S3 bucket to store Terraform state.
 3. Modify lines 34 - 37 in `teraform.tf` to match the name of your S3 bucket and DyanmoDB table.
-4. Modify the varialbes in `variables.tf`.
+4. Modify the varialbes in `variables.tf` to match your region and other settings.
 5. Run `terraform init` to initialize Terraform.
 6. Run `terraform apply` to launch the infrastructure.
 7. Run `terraform destroy` to dear down the infrastructure when you are done.

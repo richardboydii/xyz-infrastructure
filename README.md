@@ -23,7 +23,7 @@ This code provsiions several resources when used. They include:
 The [projected infrastructure costs](https://calculator.aws/#/estimate?id=d8e78acfe95578857b86142c7dcc901e5aa3170b) 
 for this workload is $133.34 per month.
 
-## Usage
+## Local Usage
 
 1. Clone the repository.
 2. In AWS, create a DynamoDB table. Use `LockID ` for the partition key.
@@ -33,3 +33,9 @@ for this workload is $133.34 per month.
 5. Run `terraform init` to initialize Terraform.
 6. Run `terraform apply` to launch the infrastructure.
 7. Run `terraform destroy` to dear down the infrastructure when you are done.
+ 
+## GitHub Actions
+
+Merges and pushes to the main branch of this repository will initiate a build using 
+[GitHub Actions](https://github.com/features/actions). The workflow runs 
+`terraform init`, `terraform plan`, then `terraform apply`.

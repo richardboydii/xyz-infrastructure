@@ -37,5 +37,5 @@ for this workload is $133.34 per month.
 ## GitHub Actions
 
 Merges and pushes to the main branch of this repository will initiate a build using 
-[GitHub Actions](https://github.com/features/actions). The workflow runs 
-`terraform init`, `terraform plan`, then `terraform apply`.
+[GitHub Actions](https://github.com/features/actions). The workflow runs several 
+terraform commands: `terraform init`, `terraform plan`, then `terraform apply`. 
